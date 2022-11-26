@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='Navbar.css')}}"
+    />
+  </head>
+<style>
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+</style>
+  <body>
+    <nav>
+<div class="container">
+<div class="neon">
+  <a href="/" class="appName" >Personal Expense Tracker</a>
+</div>
+</div>
+     
+<br><br>
+      <div class="nav">
+<div>
+        <span><a href="/aboutus" class="landingLink" style="color:#FA2A55"><b> About Us</b></a></span>
+        <span><a href="/contactus" class="landingLink" style="color:#FA2A55"><b> Contact Us<b></a></span>
+        <span><a href="/signin" class="landingLink" style="color:#FA2A55"><b>Sign In</a><b> </span>
+        <span><a href="/signup" class="landingLink" style="color:#FA2A55"><b>Sign Up</a><b></span>
+      </div>
+</div>
+    </nav>
+  </body>
+</html>
