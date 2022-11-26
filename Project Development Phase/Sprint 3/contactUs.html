@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='contactUs.css')}}"
+    />
+    <title>Contact Us</title>
+  </head>
+<style>
+.contact{
+background-color: grey;
+}
+</style>
+  <body>
+    {% include 'Navbar.html' %}
+    <h1>Contact Us Page</h1>
+<div class="contact">
+<h2> Contact Us</h2>
+<p> <b style="color:white">Team Members :<br><br></b> 1.RAJESH M S <br><br>      2.VELAN M<br> <br> 3.RAJESH KUMAR M<br><br> 4.CHANDHRU P <br><br>
+<b style="color:white"> Email ID  :<br><br></b> rajeshsuriya2019@gmail.com <br><br>
+<b style="color:white"> Mobile Number :<br><br></b> +91 9999999999<br><br> 
+</p>
+</div>
+     <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "65e6917c-135a-4648-9eef-f0b647fdac98", // The ID of this integration.
+          region: "jp-tok", // The region your integration is hosted in.
+          serviceInstanceID: "6031e5ab-decf-4990-ad01-54cf7a987e0e", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+  </body>
+</html>

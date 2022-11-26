@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='landingPage.css')}}"
+    />
+    <title >Expense Tracker Landing Page</title>
+  </head>
+<style>
+.grd{
+
+
+}
+.contact{
+background-color: grey;
+
+}
+body{
+background-image:url('../static/images/bkg.png');
+background-repeat:no-repeat;
+background-size: 100%;
+background-stretch:100%;
+//background-color:lightpink;
+}
+</style>
+  <body>
+<br>
+<div class="grd">
+    {% include 'Navbar.html' %}
+
+    <div class="contents">
+      <div class="leftContents">
+        <p class="message1">“Money, like emotions, is something you must control to keep your life on the right track.”
+<br>                   <h1 style="text-align:right"> ― Natasha Munson</h1>
+</p>
+        <p class="message2">Track all your expenses here...</p>
+        <div>
+          <a href="/signup" class="getStartedButton">Get Started -></a>
+        </div>
+      </div>
+      <div class="rightContents">
+        <img
+          src="../static/images/landing_page_img.png"
+          alt="Landing Page Gif woman working on laptop"
+          class="landing_page_gif"
+          height="90%"
+          width="100%"
+        />
+      </div>
+	
+    </div>
+<div class="contact">
+<h2> Contact Us</h2>
+<p> <b style="color:white">Team Members :<br><br></b> 1.RAJESH M S <br><br>      2.VELAN M<br> <br> 3.RAJESH KUMAR M<br><br> 4.CHANDHRU P <br><br>
+<b style="color:white"> Email ID  :<br><br></b> rajeshsuriya2019@gmail.com <br><br>
+<b style="color:white"> Mobile Number :<br><br></b> +91 9999999999<br><br> 
+</p>
+</div>	
+</div>
+  </body>
+</html>

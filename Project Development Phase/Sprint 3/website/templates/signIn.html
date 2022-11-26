@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="{{url_for('static',filename='signIn.css')}}"
+    />
+<style>
+.inner{
+background-color:white;
+}
+.back{
+background-color:#aef6f7;
+}
+</style>
+    <title >signIn</title>
+  </head>
+  <body>
+<div class="back">
+    {% include 'Navbar.html' %}
+<br>
+<br>
+    <h1 style="text-align:center">Sign In Page</h1>
+
+    <div class="signin" style="border:1px solid rgb(30, 28, 28)">
+<div class="inner">
+      <form action="/dashboard">
+        <label for="username"><b>username</b></label>
+        <input type="text" placeholder="Enter username" name="uaername" required class="name"></br></br>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required class="psw"></br></br>
+        <a href="/dashboard" target="_blank"><button type="submit" class="signinbtn">Sign in</button></a>
+      </form>
+       <p class="or">or</p>
+       <a href="/login" target="_blank"><button class="googlelogin">Signin with google</button></a>
+    </div>
+</div>
+</div>
+  </body>
+</html>
