@@ -1,0 +1,30 @@
+* {
+    margin: 0.4rem;
+  }
+body{
+
+}
+.signup{
+ width:30%;
+ height: 50%;
+ margin: 3%;
+}
+.cancelbtn,.signupbtn,.name,.email,.psw,.psw-repeat,.username,.google,.login{
+  color:green;
+  border: 2px solid black;
+  padding: 5%;
+position : relative;
+display:block;
+}
+.cancelbtn{
+  margin-left: 30%;
+}
+.google{
+  margin-left: 20%;
+}
+.signupbtn{
+    margin-left: 28%;
+}
+.or{
+    margin-left: 32%;
+}
